@@ -141,9 +141,9 @@ bool = isNumberArray( [ '1', 2 ] );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/assert/is-array`][@stdlib/assert/is-array]</span><span class="delimiter">: </span><span class="description">test if a value is an array.</span>
--   <span class="package-name">[`@stdlib/assert/is-number`][@stdlib/assert/is-number]</span><span class="delimiter">: </span><span class="description">test if a value is a number.</span>
--   <span class="package-name">[`@stdlib/assert/is-numeric-array`][@stdlib/assert/is-numeric-array]</span><span class="delimiter">: </span><span class="description">test if a value is a numeric array.</span>
+-   <span class="package-name">[`@stdlib/assert-is-array`][@stdlib/assert/is-array]</span><span class="delimiter">: </span><span class="description">test if a value is an array.</span>
+-   <span class="package-name">[`@stdlib/assert-is-number`][@stdlib/assert/is-number]</span><span class="delimiter">: </span><span class="description">test if a value is a number.</span>
+-   <span class="package-name">[`@stdlib/assert-is-numeric-array`][@stdlib/assert/is-numeric-array]</span><span class="delimiter">: </span><span class="description">test if a value is a numeric array.</span>
 
 </section>
 
