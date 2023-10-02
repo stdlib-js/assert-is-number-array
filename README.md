@@ -35,25 +35,30 @@ limitations under the License.
 
 > Test if a value is an array-like object of numbers.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-number-array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isNumberArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number-array@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-number-array/tags). For example,
-
-```javascript
-import isNumberArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number-array@v0.1.0-deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number-array@deno/mod.js';
+var isNumberArray = require( '@stdlib/assert-is-number-array' );
 ```
 
 #### isNumberArray( value )
@@ -72,7 +77,7 @@ Tests if a `value` is an array-like object containing **only** `number` primitiv
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isNumberArray.primitives( [ 1, 2, 3 ] );
 // returns true
@@ -88,7 +93,7 @@ Tests if a `value` is an array-like object containing **only** `Number` objects.
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isNumberArray.objects( [ new Number( 1 ), new Number( 2 ) ] );
 // returns true
@@ -110,8 +115,8 @@ bool = isNumberArray.objects( [ new Number( 1 ), 2 ] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
-import isNumberArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number-array@deno/mod.js';
+var Number = require( '@stdlib/number-ctor' );
+var isNumberArray = require( '@stdlib/assert-is-number-array' );
 
 var bool = isNumberArray( [ 3.14 ] );
 // returns true
@@ -164,7 +169,7 @@ bool = isNumberArray( [ '1', 2 ] );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -194,8 +199,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-number-array.svg
 [npm-url]: https://npmjs.org/package/@stdlib/assert-is-number-array
 
-[test-image]: https://github.com/stdlib-js/assert-is-number-array/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/assert-is-number-array/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/assert-is-number-array/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/assert-is-number-array/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/assert-is-number-array/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/assert-is-number-array?branch=main
@@ -226,11 +231,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array/tree/deno
+[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array
 
-[@stdlib/assert/is-number]: https://github.com/stdlib-js/assert-is-number/tree/deno
+[@stdlib/assert/is-number]: https://github.com/stdlib-js/assert-is-number
 
-[@stdlib/assert/is-numeric-array]: https://github.com/stdlib-js/assert-is-numeric-array/tree/deno
+[@stdlib/assert/is-numeric-array]: https://github.com/stdlib-js/assert-is-numeric-array
 
 <!-- </related-links> -->
 
