@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isNumberArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number-array@esm/index.mjs';
+import isNumberArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number-array@v0.2.2-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number-array@esm/index.mjs';
+import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number-array@v0.2.2-esm/index.mjs';
 ```
 
 #### isNumberArray( value )
@@ -111,7 +111,7 @@ bool = isNumberArray.objects( [ new Number( 1 ), 2 ] );
 <script type="module">
 
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
-import isNumberArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number-array@esm/index.mjs';
+import isNumberArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number-array@v0.2.2-esm/index.mjs';
 
 var bool = isNumberArray( [ 3.14 ] );
 // returns true
